@@ -25,7 +25,7 @@ def make_input_tensor_from_csv(csv_path, seq_len=10):
 
     return torch.stack(data)  # [batch, seq_len, input_dim]
 
-# 사용 예시
-csv_path = "lotto_recent30.csv"  # 도희 님 CSV 경로
+
+csv_path = "lotto_recent30.csv" 
 tensor_data = make_input_tensor_from_csv(csv_path)
 print(tensor_data.shape)  # torch.Size([N, 10, 6])
